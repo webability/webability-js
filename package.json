@@ -1,0 +1,18 @@
+{
+  "name": "@webability/webability-js",
+  "version": "0.0.1",
+  "description": "Cliente oficial en JavaScript/TypeScript para la API pública de WebAbility (https://api.webability.info).",
+  "main": "src/index.js",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/webability/webability-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webability/webability-js.git"
+  },
+  "author": "Philippe Thomassigny",
+  "keywords": ["webability", "api", "dns", "mail", "image"],
+  "engines": {
+    "node": ">=18"
+  }
+}
