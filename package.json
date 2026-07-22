@@ -4,6 +4,14 @@
   "description": "Cliente oficial en JavaScript/TypeScript para la API pública de WebAbility (https://api.webability.info).",
   "main": "src/index.js",
   "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./dns": "./src/dns.js",
+    "./mail": "./src/mail.js",
+    "./image": "./src/image.js",
+    "./video": "./src/video.js",
+    "./marketing": "./src/marketing.js"
+  },
   "license": "MIT",
   "homepage": "https://github.com/webability/webability-js",
   "repository": {
