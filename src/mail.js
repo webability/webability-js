@@ -29,11 +29,14 @@ export class Mail {
    *             // arma el correo con esa plantilla en vez de subject/html/text
    *             // (que se ignoran) y usa to.vars para personalizarla, sin
    *             // ningún prefijo en los nombres — dentro del contenido de la
-   *             // plantilla (Consola → Correos → Plantillas) se acceden como
-   *             // {{vars>clave}}, no {{clave}} a secas (eso último solo
-   *             // aplica al envío ad-hoc, sin template). Se valida que exista
-   *             // y esté activa ANTES de encolar: si no, send() rechaza con
-   *             // el error de la API (3025/3026), no un envío "pending" fallido.
+   *             // plantilla (Consola → Correos → Plantillas) se acceden
+   *             // exactamente igual que en el envío ad-hoc: {{clave}} directo.
+   *             // La plantilla solo ve las vars, nunca el resto del mensaje
+   *             // (to, from, subject, etc.) — si necesitas imprimir alguno de
+   *             // esos datos dentro del cuerpo, agrégalo también a vars. Se
+   *             // valida que exista y esté activa ANTES de encolar: si no,
+   *             // send() rechaza con el error de la API (3025/3026), no un
+   *             // envío "pending" fallido.
    *   subject, html, text, tags, // ignorados si template viene
    *   track_opens, track_clicks,
    *   wait_send, // si es true, el servidor espera (hasta ~20s) el resultado

@@ -1,6 +1,6 @@
 {
   "name": "@webability/webability-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cliente oficial en JavaScript/TypeScript para la API pública de WebAbility (https://api.webability.info).",
   "main": "src/index.js",
   "type": "module",
